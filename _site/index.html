@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dylan Kilgore">
+        <meta name="description" content="Elementary to advanced JavaScript, HTML and CSS problem solutions">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Programmming Problem Solutions</title>
+
+        <!-- No frameworks here! -->
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+
+        <!-- To run and debug locally I suggest using Jekyll (https://jekyllrb.com/) because it's super easy and may be used on most types of Operating Systems. -->
+        <!-- Once Jekyll is configured on your machine navigate to this folder and use the command 'jekyll serve' (remove the quotes) -->
+    </head>
+    <body>
+
+        <!-- All css selector classes use BEM (Block, Element, Modifier) syntax for maintainability. -->
+        <div class="c-content">
+            <h3 class="c-content__content-title">Programming Problem Solutions</h3>
+
+            <!-- This isn't a web application, therefore I use simple html links to other pages. -->
+            <ol class="c-content__ordered-list">
+                <li class="c-content__ordered-list__item">
+                    <a class="c-content__ordered-list__item__link" href="helloworld.html">A program that prints ‘Hello World’ to the screen.</a>
+                </li>
+                <li class="c-content__ordered-list__item">
+                    <a class="c-content__ordered-list__item__link" href="whatsyourname.html">A program that asks for your name and greets you with your name.</a>
+                </li>
+                <li class="c-content__ordered-list__item">
+                    <a class="c-content__ordered-list__item__link" href="greetspecificpeople.html">The previous program (modified), such that only the people Alice and Bob are greeted with their names.</a>
+                </li>
+                <li class="c-content__ordered-list__item">
+                    <a class="c-content__ordered-list__item__link" href="numbersum.html">A program that asks for a number n and prints the sum of the numbers 1 to n.</a>
+                </li>
+                <li class="c-content__ordered-list__item">
+                    <a class="c-content__ordered-list__item__link" href="sumofthreeorfive.html">The previous program (modified), such that only multiples of three or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n = 17.</a>
+                </li>
+                <li class="c-content__ordered-list__item">
+                    <a class="c-content__ordered-list__item__link" href="sumorproduct.html">A program that asks the user for a number n and gives people the possibility to choose between computing the sum and computing the product of 1, …, n.</a>
+                </li>
+            </ol>
+        </div>
+
+        <!-- I place the js reference here so that the DOM finishes loading before executing the IFFE. -->
+        <!-- That way I avoid any null reference exceptions at runtime unless there are typos or any undeclared/undefined JS -->
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

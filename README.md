@@ -1,2 +1,2 @@
 # programming_problems
-Elementary to advanced JavaScript, HTML and CSS problem solutions
+My answers to Adrian Neumann's Simple Programming Problems at https://adriann.github.io/programming_problems.html

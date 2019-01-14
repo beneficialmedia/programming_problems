@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dylan Kilgore">
+        <meta name="description" content="Elementary to advanced JavaScript, HTML and CSS problem solutions">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>What's your name?</title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <a href="/" class="c-back" title="Go to the home page">← Home</a>
+
+        <!-- Using plain old JavaScript I ask for the user's name and greet them. -->
+        <div class="c-content">
+            <h3 class="c-content__content-title">What's Your Name?</h3>
+            <div class="c-content__input">
+                <input class="c-content__input__text"
+                    type="text"
+                    minlength="1"
+                    maxlength="51"
+                    role="text"
+                    aria-roledescription="Name input text box"
+                    aria-label="Type your name here."
+                    placeholder="Type your name here." />
+                <button class="c-content__input__button"
+                    role="button"
+                    aria-label="Go"
+                    aria-roledescription="Go button">Go</button>
+            </div>
+            <div class="c-content__greeting">
+                <div class="c-content__greeting__proper">
+                    Hello, <span class="c-content__greeting-name"></span>, it's very nice to meet you!
+                </div>
+                <div class="c-content__greeting__prompt">
+                    Please type your name so I can say hi.
+                </div>
+                <div class="c-content__greeting__error">
+                    Let's not get carried away!
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>

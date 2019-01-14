@@ -1,0 +1,110 @@
+/* First, we reset the width, height and the insets for consistency amongst browsers */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
+/* Use BEM class names to ensure easily understood heiarchy and any modifications to scope */
+.c-back {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: auto;
+    height: 14px;
+    display: block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    z-index: 1;
+}
+
+.c-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 64px 12vw 0 12vw;
+    height: auto;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #333333;
+    z-index: 0;
+}
+
+    .c-content__content-title {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 0 0 24px 0;
+    }
+
+    .c-content__ordered-list {
+        padding-left: 0;
+    }
+
+        .c-content__ordered-list__item {
+            margin-bottom: 12px;
+        }
+
+    .c-content__input,
+    .c-content__button {
+        margin: 0 0 24px 0;
+    }
+
+        .c-content__input__text {
+            padding: 10px 8px 8px 8px;
+            margin-right: 8px;
+            border-radius: 4px;
+            border-color: darkslategray;
+            border-width: 1px;
+        }
+
+        .c-content__button__button,
+        .c-content__input__button {
+            cursor: pointer;
+            background-color: lightgreen;
+            padding: 10px 20px 8px 20px;
+            border-radius: 4px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: darkslategray;
+        }
+
+        .c-content__input__radiobuttongroup {
+            display: inline-block;
+        }
+
+            .c-content__input__radiobuttongroup__choice {
+                margin-right: 8px;
+            }
+
+        .c-content__button__button:focus,
+        .c-content__button__button:hover,
+        .c-content__input__button:focus,
+        .c-content__input__button:hover {
+            background-color: lawngreen;
+        }
+
+    .c-content__greeting {
+        font-size: 24px;
+    }
+        .c-content__greeting__proper,
+        .c-content__greeting__prompt,
+        .c-content__greeting__unrecognized,
+        .c-content__greeting__error,
+        .c-content__sum,
+        .c-content__error,
+        .c-content__product {
+            display: none;
+        }

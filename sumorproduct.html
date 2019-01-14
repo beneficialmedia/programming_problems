@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dylan Kilgore">
+        <meta name="description" content="Elementary to advanced JavaScript, HTML and CSS problem solutions">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Add or Multiply</title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <a href="/" class="c-back" title="Go to the home page">← Home</a>
+
+        <!-- Using plain old JavaScript I ask the user to choose between computing the sum and computing the product of 1,...,n. -->
+        <div class="c-content">
+            <h3 class="c-content__content-title">Choose between adding or multiplying to get the sum or product of 1, …, n.</h3>
+            <div class="c-content__input">
+                <input class="c-content__input__text c-content__input__text--sumorproduct"
+                    type="number"
+                    minlength="1"
+                    role="number"
+                    aria-roledescription="Number input box"
+                    aria-label="Type a number here."
+                    placeholder="Type a number here." />
+                <div class="c-content__input__radiobuttongroup">
+                    <span class="c-content__input__radiobuttongroup__choice">
+                        <input type="radio" name="math" value="Add" /> Add
+                    </span>
+                    <span class="c-content__input__radiobuttongroup__choice">
+                        <input type="radio" name="math" value="Multiply" /> Multiply
+                    </span>
+                </div>
+            </div>
+            <div class="c-content__button">
+                <button class="c-content__button__button"
+                    role="button"
+                    aria-label="Go"
+                    aria-roledescription="Go button">Go</button>
+            </div>
+            <div class="c-content__sum">
+                The sum of the numbers 1, …, <span class="c-content__number__input"></span> is <span class="c-content__sum__number"></span>.
+            </div>
+            <div class="c-content__product">
+                The product of the numbers 1, …, <span class="c-content__number__input"></span> is <span class="c-content__product__number"></span>.
+            </div>
+            <div class="c-content__error">
+                Provide a number and choose add or multiply to see the sum or the product.
+            </div>
+        </div>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
